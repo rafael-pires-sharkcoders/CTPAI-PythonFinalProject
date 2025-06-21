@@ -1,18 +1,18 @@
-# 🎯 Detector de Objetos em Tempo Real
+# Detector de Objetos em Tempo Real
 
 Um detector de objetos em tempo real usando **OpenCV** e **YOLO** que identifica objetos através da webcam, desenhando caixas delimitadoras e labels com o nome dos objetos detectados.
 
-## 📋 Funcionalidades
+##  Funcionalidades
 
-- ✅ **Detecção em tempo real** via webcam
-- ✅ **Caixas delimitadoras** coloridas para cada objeto
-- ✅ **Labels com nome e confiança** dos objetos
-- ✅ **Contador de FPS** em tempo real
-- ✅ **Contador de objetos** detectados
-- ✅ **Controles de teclado** (pausar/despausar)
-- ✅ **Interface visual** limpa e informativa
+-  **Detecção em tempo real** via webcam
+-  **Caixas delimitadoras** coloridas para cada objeto
+-  **Labels com nome e confiança** dos objetos
+-  **Contador de FPS** em tempo real
+-  **Contador de objetos** detectados
+-  **Controles de teclado** (pausar/despausar)
+-  **Interface visual** limpa e informativa
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Python 3.8+**
 - **OpenCV** - Captura de vídeo e processamento de imagem
@@ -20,7 +20,7 @@ Um detector de objetos em tempo real usando **OpenCV** e **YOLO** que identifica
 - **NumPy** - Processamento numérico
 - **PyTorch** - Backend do YOLO (instalado automaticamente)
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 detetor_objetos/
@@ -36,7 +36,7 @@ detetor_objetos/
 └── README.md                  # Este arquivo
 ```
 
-## 🚀 Instalação
+##  Instalação
 
 ### 1. Clonar/Baixar o projeto
 ```bash
@@ -57,7 +57,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## 🎮 Controles
+##  Controles
 
 | Tecla | Ação |
 |-------|------|
@@ -65,7 +65,7 @@ python main.py
 | `Espaço` | Pausar/Despausar detecção |
 | `ESC` | Fechar janela |
 
-## ⚙️ Configurações
+##  Configurações
 
 Você pode ajustar as configurações no arquivo `utils/config.py`:
 
@@ -91,19 +91,18 @@ TEXT_COLOR = (255, 255, 255)    # Cor do texto
 BOX_THICKNESS = 2               # Espessura das caixas
 ```
 
-## 🎯 Objetos Detectados
+##  Objetos Detectados
 
 O modelo YOLO padrão pode detectar **80 classes** diferentes de objetos, incluindo:
 
-- 👤 **Pessoas** (person)
-- 🚗 **Veículos** (car, truck, bus, motorcycle, bicycle)
-- 🐕 **Animais** (dog, cat, bird, horse, cow, etc.)
-- 📱 **Objetos** (cell phone, laptop, mouse, keyboard)
-- 🪑 **Móveis** (chair, couch, table, bed)
-- 🍎 **Comida** (apple, banana, pizza, cake)
-- E muito mais...
+-  **Pessoas** (person)
+-  **Veículos** (car, truck, bus, motorcycle, bicycle)
+-  **Animais** (dog, cat, bird, horse, cow, etc.)
+-  **Objetos** (cell phone, laptop, mouse, keyboard)
+-  **Móveis** (chair, couch, table, bed)
+-  **Comida** (apple, banana, pizza, cake)
 
-## 🔧 Personalização
+##  Personalização
 
 ### Trocar Modelo YOLO
 ```python
@@ -121,7 +120,7 @@ CONFIDENCE_THRESHOLD = 0.3
 CONFIDENCE_THRESHOLD = 0.7
 ```
 
-## 🐛 Solução de Problemas
+##  Solução de Problemas
 
 ### Câmera não abre
 - Certifique-se que a câmera não está sendo usada por outro programa
@@ -142,7 +141,7 @@ pip install numpy
 pip install pillow
 ```
 
-## 📊 Performance
+##  Performance
 
 | Modelo | Velocidade | Precisão | Tamanho |
 |--------|------------|----------|---------|
@@ -151,11 +150,11 @@ pip install pillow
 | YOLOv8m | ⚡ | ⭐⭐⭐⭐ | ~52MB |
 | YOLOv8l | 🐌 | ⭐⭐⭐⭐⭐ | ~87MB |
 
-## 📝 Licença
+##  Licença
 
 Este projeto é open source e está disponível sob a licença MIT.
 
-## 🤝 Contribuição
+##  Contribuição
 
 Sinta-se à vontade para contribuir com melhorias:
 
@@ -165,7 +164,7 @@ Sinta-se à vontade para contribuir com melhorias:
 4. Push para a branch
 5. Abra um Pull Request
 
-## 📞 Suporte
+##  Suporte
 
 Se tiver problemas ou dúvidas:
 - Abra uma issue no repositório
