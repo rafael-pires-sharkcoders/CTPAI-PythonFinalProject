@@ -1,0 +1,13 @@
+apiVersion: 1
+
+providers:
+  - name: 'object-detection-dashboards'
+    orgId: 1
+    folder: 'Object Detection'
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 10
+    allowUiUpdates: true
+    options:
+      path: /etc/grafana/provisioning/dashboards
+

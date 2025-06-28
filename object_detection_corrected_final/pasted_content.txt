@@ -1,0 +1,684 @@
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.546552438Z level=info msg="Executing migration" id="Update alert_notification table charset"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.54659824Z level=info msg="Migration successfully executed" id="Update alert_notification table charset" duration=48.902µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.54974256Z level=info msg="Executing migration" id="create notification_journal table v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.550419086Z level=info msg="Migration successfully executed" id="create notification_journal table v1" duration=676.526µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.553804915Z level=info msg="Executing migration" id="add index notification_journal org_id & alert_id & notifier_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.554424339Z level=info msg="Migration successfully executed" id="add index notification_journal org_id & alert_id & notifier_id" duration=620.324µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.557702464Z level=info msg="Executing migration" id="drop alert_notification_journal"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.558263785Z level=info msg="Migration successfully executed" id="drop alert_notification_journal" duration=563.221µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.567694046Z level=info msg="Executing migration" id="create alert_notification_state table v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.56832107Z level=info msg="Migration successfully executed" id="create alert_notification_state table v1" duration=630.025µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.571850704Z level=info msg="Executing migration" id="add index alert_notification_state org_id & alert_id & notifier_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.572475528Z level=info msg="Migration successfully executed" id="add index alert_notification_state org_id & alert_id & notifier_id" duration=627.524µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.576369077Z level=info msg="Executing migration" id="Add for to alert table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.578424756Z level=info msg="Migration successfully executed" id="Add for to alert table" duration=2.056178ms  
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.582250602Z level=info msg="Executing migration" id="Add column uid in alert_notification"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.58430128Z level=info msg="Migration successfully executed" id="Add column uid in alert_notification" duration=2.051678ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.58795212Z level=info msg="Executing migration" id="Update uid column values in alert_notification"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.588114826Z level=info msg="Migration successfully executed" id="Update uid column values in alert_notification" duration=165.107µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.597617289Z level=info msg="Executing migration" id="Add unique index alert_notification_org_id_uid"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.598446721Z level=info msg="Migration successfully executed" id="Add unique index alert_notification_org_id_uid" duration=831.231µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.602381671Z level=info msg="Executing migration" id="Remove unique index org_id_name"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.602961493Z level=info msg="Migration successfully executed" id="Remove unique index org_id_name" duration=581.522µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.606698136Z level=info msg="Executing migration" id="Add column secure_settings in alert_notification"        
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.608859418Z level=info msg="Migration successfully executed" id="Add column secure_settings in alert_notification" duration=2.162382ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.61230095Z level=info msg="Executing migration" id="alter alert.settings to mediumtext"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.612391553Z level=info msg="Migration successfully executed" id="alter alert.settings to mediumtext" duration=93.803µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.616060093Z level=info msg="Executing migration" id="Add non-unique index alert_notification_state_alert_id"  
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.616862324Z level=info msg="Migration successfully executed" id="Add non-unique index alert_notification_state_alert_id" duration=805.731µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.626763709Z level=info msg="Executing migration" id="Add non-unique index alert_rule_tag_alert_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.627517839Z level=info msg="Migration successfully executed" id="Add non-unique index alert_rule_tag_alert_id" duration=753.73µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.631387295Z level=info msg="Executing migration" id="Drop old annotation table v4"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.631550301Z level=info msg="Migration successfully executed" id="Drop old annotation table v4" duration=164.706µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.635138146Z level=info msg="Executing migration" id="create annotation table v5"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.635848374Z level=info msg="Migration successfully executed" id="create annotation table v5" duration=714.229µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.646075085Z level=info msg="Executing migration" id="add index annotation 0 v3"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.646751012Z level=info msg="Migration successfully executed" id="add index annotation 0 v3" duration=678.527µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.650508663Z level=info msg="Executing migration" id="add index annotation 1 v3"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.651042585Z level=info msg="Migration successfully executed" id="add index annotation 1 v3" duration=535.322µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.654676431Z level=info msg="Executing migration" id="add index annotation 2 v3"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.655275255Z level=info msg="Migration successfully executed" id="add index annotation 2 v3" duration=600.524µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.65839418Z level=info msg="Executing migration" id="add index annotation 3 v3"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.659154811Z level=info msg="Migration successfully executed" id="add index annotation 3 v3" duration=760.931µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.662999665Z level=info msg="Executing migration" id="add index annotation 4 v3"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.663705294Z level=info msg="Migration successfully executed" id="add index annotation 4 v3" duration=702.929µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.67852729Z level=info msg="Executing migration" id="Update annotation table charset"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.678582392Z level=info msg="Migration successfully executed" id="Update annotation table charset" duration=70.403µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.682158935Z level=info msg="Executing migration" id="Add column region_id to annotation table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.684561332Z level=info msg="Migration successfully executed" id="Add column region_id to annotation table" duration=2.400797ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.687944968Z level=info msg="Executing migration" id="Drop category_id index"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.688596094Z level=info msg="Migration successfully executed" id="Drop category_id index" duration=652.826µs   
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.692316144Z level=info msg="Executing migration" id="Add column tags to annotation table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.694527733Z level=info msg="Migration successfully executed" id="Add column tags to annotation table" duration=2.211188ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.698087476Z level=info msg="Executing migration" id="Create annotation_tag table v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.698552694Z level=info msg="Migration successfully executed" id="Create annotation_tag table v2" duration=466.918µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.708194882Z level=info msg="Executing migration" id="Add unique index annotation_tag.annotation_id_tag_id"    
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.709311627Z level=info msg="Migration successfully executed" id="Add unique index annotation_tag.annotation_id_tag_id" duration=1.115745ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.713606299Z level=info msg="Executing migration" id="drop index UQE_annotation_tag_annotation_id_tag_id - v2" 
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.71437203Z level=info msg="Migration successfully executed" id="drop index UQE_annotation_tag_annotation_id_tag_id - v2" duration=778.131µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.717797368Z level=info msg="Executing migration" id="Rename table annotation_tag to annotation_tag_v2 - v2"   
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.727173445Z level=info msg="Migration successfully executed" id="Rename table annotation_tag to annotation_tag_v2 - v2" duration=9.374176ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.731896435Z level=info msg="Executing migration" id="Create annotation_tag table v3"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.732471358Z level=info msg="Migration successfully executed" id="Create annotation_tag table v3" duration=580.324µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.735982299Z level=info msg="Executing migration" id="create index UQE_annotation_tag_annotation_id_tag_id - Add unique index annotation_tag.annotation_id_tag_id V3"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.73651932Z level=info msg="Migration successfully executed" id="create index UQE_annotation_tag_annotation_id_tag_id - Add unique index annotation_tag.annotation_id_tag_id V3" duration=542.322µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.740021061Z level=info msg="Executing migration" id="copy annotation_tag v2 to v3"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.740327673Z level=info msg="Migration successfully executed" id="copy annotation_tag v2 to v3" duration=310.012µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.749559644Z level=info msg="Executing migration" id="drop table annotation_tag_v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.750050764Z level=info msg="Migration successfully executed" id="drop table annotation_tag_v2" duration=493.62µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.753537904Z level=info msg="Executing migration" id="Update alert annotations and set TEXT to empty"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.753790315Z level=info msg="Migration successfully executed" id="Update alert annotations and set TEXT to empty" duration=271.61µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.757349658Z level=info msg="Executing migration" id="Add created time to annotation table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.759707552Z level=info msg="Migration successfully executed" id="Add created time to annotation table" duration=2.357395ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.871538547Z level=info msg="Executing migration" id="Add updated time to annotation table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:47.874645772Z level=info msg="Migration successfully executed" id="Add updated time to annotation table" duration=3.108325ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:48.064507203Z level=info msg="Executing migration" id="Add index for created in annotation table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:48.065336336Z level=info msg="Migration successfully executed" id="Add index for created in annotation table" duration=830.933µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:48.186680113Z level=info msg="Executing migration" id="Add index for updated in annotation table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:48.187422743Z level=info msg="Migration successfully executed" id="Add index for updated in annotation table" duration=745.13µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:48.376625448Z level=info msg="Executing migration" id="Convert existing annotations from seconds to milliseconds"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:48.376872458Z level=info msg="Migration successfully executed" id="Convert existing annotations from seconds to milliseconds" duration=249.51µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:48.505001007Z level=info msg="Executing migration" id="Add epoch_end column"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:48.507360102Z level=info msg="Migration successfully executed" id="Add epoch_end column" duration=2.363795ms    
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:48.640347847Z level=info msg="Executing migration" id="Add index for epoch_end"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:48.641214382Z level=info msg="Migration successfully executed" id="Add index for epoch_end" duration=873.835µs  
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:48.759135322Z level=info msg="Executing migration" id="Make epoch_end the same as epoch"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:48.759384632Z level=info msg="Migration successfully executed" id="Make epoch_end the same as epoch" duration=251.21µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:48.89843352Z level=info msg="Executing migration" id="Move region to single row"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:48.898749433Z level=info msg="Migration successfully executed" id="Move region to single row" duration=317.213µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.0397363Z level=info msg="Executing migration" id="Remove index org_id_epoch from annotation table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.040693338Z level=info msg="Migration successfully executed" id="Remove index org_id_epoch from annotation table" duration=959.538µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.1118906Z level=info msg="Executing migration" id="Remove index org_id_dashboard_id_panel_id_epoch from annotation table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.112590528Z level=info msg="Migration successfully executed" id="Remove index org_id_dashboard_id_panel_id_epoch from annotation table" duration=702.628µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.133578472Z level=info msg="Executing migration" id="Add index for org_id_dashboard_id_epoch_end_epoch on annotation table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.134210097Z level=info msg="Migration successfully executed" id="Add index for org_id_dashboard_id_epoch_end_epoch on annotation table" duration=634.026µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.138132155Z level=info msg="Executing migration" id="Add index for org_id_epoch_end_epoch on annotation table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.138654376Z level=info msg="Migration successfully executed" id="Add index for org_id_epoch_end_epoch on annotation table" duration=522.721µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.142013911Z level=info msg="Executing migration" id="Remove index org_id_epoch_epoch_end from annotation table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.142808643Z level=info msg="Migration successfully executed" id="Remove index org_id_epoch_epoch_end from annotation table" duration=796.432µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.146086074Z level=info msg="Executing migration" id="Add index for alert_id on annotation table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.146606995Z level=info msg="Migration successfully executed" id="Add index for alert_id on annotation table" duration=522.121µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.149674418Z level=info msg="Executing migration" id="Increase tags column to length 4096"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.149733321Z level=info msg="Migration successfully executed" id="Increase tags column to length 4096" duration=60.503µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.152088816Z level=info msg="Executing migration" id="create test_data table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.152530833Z level=info msg="Migration successfully executed" id="create test_data table" duration=443.818µs   
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.155988472Z level=info msg="Executing migration" id="create dashboard_version table v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.156473292Z level=info msg="Migration successfully executed" id="create dashboard_version table v1" duration=485.82µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.159628319Z level=info msg="Executing migration" id="add index dashboard_version.dashboard_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.160146639Z level=info msg="Migration successfully executed" id="add index dashboard_version.dashboard_id" duration=518.821µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.16338577Z level=info msg="Executing migration" id="add unique index dashboard_version.dashboard_id and dashboard_version.version"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.163964793Z level=info msg="Migration successfully executed" id="add unique index dashboard_version.dashboard_id and dashboard_version.version" duration=576.524µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.167166622Z level=info msg="Executing migration" id="Set dashboard version to 1 where 0"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.167288726Z level=info msg="Migration successfully executed" id="Set dashboard version to 1 where 0" duration=123.105µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.170484655Z level=info msg="Executing migration" id="save existing dashboard data in dashboard_version table v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.170720064Z level=info msg="Migration successfully executed" id="save existing dashboard data in dashboard_version table v1" duration=236.709µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.174150902Z level=info msg="Executing migration" id="alter dashboard_version.data to mediumtext v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.174230105Z level=info msg="Migration successfully executed" id="alter dashboard_version.data to mediumtext v1" duration=82.003µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.177498737Z level=info msg="Executing migration" id="create team table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.178148763Z level=info msg="Migration successfully executed" id="create team table" duration=650.926µs        
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.181349792Z level=info msg="Executing migration" id="add index team.org_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.181944415Z level=info msg="Migration successfully executed" id="add index team.org_id" duration=595.324µs    
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.185023139Z level=info msg="Executing migration" id="add unique index team_org_id_name"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.18553756Z level=info msg="Migration successfully executed" id="add unique index team_org_id_name" duration=514.721µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.188594283Z level=info msg="Executing migration" id="Add column uid in team"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.191110684Z level=info msg="Migration successfully executed" id="Add column uid in team" duration=2.516301ms  
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.194643326Z level=info msg="Executing migration" id="Update uid column values in team"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.194790632Z level=info msg="Migration successfully executed" id="Update uid column values in team" duration=148.706µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.198179868Z level=info msg="Executing migration" id="Add unique index team_org_id_uid"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.198752091Z level=info msg="Migration successfully executed" id="Add unique index team_org_id_uid" duration=573.023µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.202388937Z level=info msg="Executing migration" id="create team member table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.202875257Z level=info msg="Migration successfully executed" id="create team member table" duration=487.12µs  
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.206226191Z level=info msg="Executing migration" id="add index team_member.org_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.206820815Z level=info msg="Migration successfully executed" id="add index team_member.org_id" duration=595.824µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.210228052Z level=info msg="Executing migration" id="add unique index team_member_org_id_team_id_user_id"     
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.210837377Z level=info msg="Migration successfully executed" id="add unique index team_member_org_id_team_id_user_id" duration=613.125µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.214456022Z level=info msg="Executing migration" id="add index team_member.team_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.214997744Z level=info msg="Migration successfully executed" id="add index team_member.team_id" duration=541.922µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.218431982Z level=info msg="Executing migration" id="Add column email to team table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.221144191Z level=info msg="Migration successfully executed" id="Add column email to team table" duration=2.709309ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.22459573Z level=info msg="Executing migration" id="Add column external to team_member table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.227009327Z level=info msg="Migration successfully executed" id="Add column external to team_member table" duration=2.415297ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.230649673Z level=info msg="Executing migration" id="Add column permission to team_member table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.233123272Z level=info msg="Migration successfully executed" id="Add column permission to team_member table" duration=2.473799ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.236665715Z level=info msg="Executing migration" id="create dashboard acl table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.237199736Z level=info msg="Migration successfully executed" id="create dashboard acl table" duration=534.321µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.240894985Z level=info msg="Executing migration" id="add index dashboard_acl_dashboard_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.241466608Z level=info msg="Migration successfully executed" id="add index dashboard_acl_dashboard_id" duration=572.723µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.24475524Z level=info msg="Executing migration" id="add unique index dashboard_acl_dashboard_id_user_id"      
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.245385965Z level=info msg="Migration successfully executed" id="add unique index dashboard_acl_dashboard_id_user_id" duration=631.425µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.248682798Z level=info msg="Executing migration" id="add unique index dashboard_acl_dashboard_id_team_id"     
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.24922582Z level=info msg="Migration successfully executed" id="add unique index dashboard_acl_dashboard_id_team_id" duration=543.922µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.252297743Z level=info msg="Executing migration" id="add index dashboard_acl_user_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.252858666Z level=info msg="Migration successfully executed" id="add index dashboard_acl_user_id" duration=561.723µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.255874787Z level=info msg="Executing migration" id="add index dashboard_acl_team_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.256387708Z level=info msg="Migration successfully executed" id="add index dashboard_acl_team_id" duration=513.42µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.259339226Z level=info msg="Executing migration" id="add index dashboard_acl_org_id_role"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.259893048Z level=info msg="Migration successfully executed" id="add index dashboard_acl_org_id_role" duration=554.522µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.262964972Z level=info msg="Executing migration" id="add index dashboard_permission"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.263537095Z level=info msg="Migration successfully executed" id="add index dashboard_permission" duration=572.323µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.266730023Z level=info msg="Executing migration" id="save default acl rules in dashboard_acl table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.267039136Z level=info msg="Migration successfully executed" id="save default acl rules in dashboard_acl table" duration=309.613µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.270172862Z level=info msg="Executing migration" id="delete acl rules for deleted dashboards and folders"     
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.270327568Z level=info msg="Migration successfully executed" id="delete acl rules for deleted dashboards and folders" duration=155.206µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.273279186Z level=info msg="Executing migration" id="create tag table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.273678703Z level=info msg="Migration successfully executed" id="create tag table" duration=399.316µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.27684023Z level=info msg="Executing migration" id="add index tag.key_value"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.277414853Z level=info msg="Migration successfully executed" id="add index tag.key_value" duration=575.024µs  
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.280816789Z level=info msg="Executing migration" id="create login attempt table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.281231906Z level=info msg="Migration successfully executed" id="create login attempt table" duration=414.717µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.286024199Z level=info msg="Executing migration" id="add index login_attempt.username"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.286587321Z level=info msg="Migration successfully executed" id="add index login_attempt.username" duration=564.122µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.289646944Z level=info msg="Executing migration" id="drop index IDX_login_attempt_username - v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.290301171Z level=info msg="Migration successfully executed" id="drop index IDX_login_attempt_username - v1" duration=654.627µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.293479598Z level=info msg="Executing migration" id="Rename table login_attempt to login_attempt_tmp_qwerty - v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.30572099Z level=info msg="Migration successfully executed" id="Rename table login_attempt to login_attempt_tmp_qwerty - v1" duration=12.238992ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.309995162Z level=info msg="Executing migration" id="create login_attempt v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.310538584Z level=info msg="Migration successfully executed" id="create login_attempt v2" duration=544.222µs  
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.314065326Z level=info msg="Executing migration" id="create index IDX_login_attempt_username - v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.314655749Z level=info msg="Migration successfully executed" id="create index IDX_login_attempt_username - v2" duration=591.923µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.31764567Z level=info msg="Executing migration" id="copy login_attempt v1 to v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.317840777Z level=info msg="Migration successfully executed" id="copy login_attempt v1 to v2" duration=198.408µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.320084468Z level=info msg="Executing migration" id="drop login_attempt_tmp_qwerty"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.320541686Z level=info msg="Migration successfully executed" id="drop login_attempt_tmp_qwerty" duration=457.918µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.323922822Z level=info msg="Executing migration" id="create user auth table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.32436844Z level=info msg="Migration successfully executed" id="create user auth table" duration=445.618µs    
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.327429863Z level=info msg="Executing migration" id="create index IDX_user_auth_auth_module_auth_id - v1"     
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.328014886Z level=info msg="Migration successfully executed" id="create index IDX_user_auth_auth_module_auth_id - v1" duration=585.923µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.332902083Z level=info msg="Executing migration" id="alter user_auth.auth_id to length 190"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.332971386Z level=info msg="Migration successfully executed" id="alter user_auth.auth_id to length 190" duration=71.503µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.336112012Z level=info msg="Executing migration" id="Add OAuth access token to user_auth"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.338784019Z level=info msg="Migration successfully executed" id="Add OAuth access token to user_auth" duration=2.674307ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.341997248Z level=info msg="Executing migration" id="Add OAuth refresh token to user_auth"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.344644755Z level=info msg="Migration successfully executed" id="Add OAuth refresh token to user_auth" duration=2.647207ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.347907886Z level=info msg="Executing migration" id="Add OAuth token type to user_auth"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.350636796Z level=info msg="Migration successfully executed" id="Add OAuth token type to user_auth" duration=2.72811ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.353846825Z level=info msg="Executing migration" id="Add OAuth expiry to user_auth"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.356583635Z level=info msg="Migration successfully executed" id="Add OAuth expiry to user_auth" duration=2.73681ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.35995487Z level=info msg="Executing migration" id="Add index to user_id column in user_auth"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.360595996Z level=info msg="Migration successfully executed" id="Add index to user_id column in user_auth" duration=644.026µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.363781724Z level=info msg="Executing migration" id="Add OAuth ID token to user_auth"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.366496133Z level=info msg="Migration successfully executed" id="Add OAuth ID token to user_auth" duration=2.715409ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.369534855Z level=info msg="Executing migration" id="create server_lock table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.370007474Z level=info msg="Migration successfully executed" id="create server_lock table" duration=472.819µs 
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.373323107Z level=info msg="Executing migration" id="add index server_lock.operation_uid"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.373966133Z level=info msg="Migration successfully executed" id="add index server_lock.operation_uid" duration=644.526µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.377256166Z level=info msg="Executing migration" id="create user auth token table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.377698183Z level=info msg="Migration successfully executed" id="create user auth token table" duration=442.718µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.381116521Z level=info msg="Executing migration" id="add unique index user_auth_token.auth_token"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.381762147Z level=info msg="Migration successfully executed" id="add unique index user_auth_token.auth_token" duration=647.426µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.385099881Z level=info msg="Executing migration" id="add unique index user_auth_token.prev_auth_token"        
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.385667004Z level=info msg="Migration successfully executed" id="add unique index user_auth_token.prev_auth_token" duration=567.623µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.388921334Z level=info msg="Executing migration" id="add index user_auth_token.user_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.389583161Z level=info msg="Migration successfully executed" id="add index user_auth_token.user_id" duration=661.727µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.392903294Z level=info msg="Executing migration" id="Add revoked_at to the user auth token"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.39577161Z level=info msg="Migration successfully executed" id="Add revoked_at to the user auth token" duration=2.868116ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.399184047Z level=info msg="Executing migration" id="add index user_auth_token.revoked_at"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.399797472Z level=info msg="Migration successfully executed" id="add index user_auth_token.revoked_at" duration=613.924µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.402858395Z level=info msg="Executing migration" id="create cache_data table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.403311713Z level=info msg="Migration successfully executed" id="create cache_data table" duration=453.719µs  
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.406525942Z level=info msg="Executing migration" id="add unique index cache_data.cache_key"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.407113566Z level=info msg="Migration successfully executed" id="add unique index cache_data.cache_key" duration=588.624µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.410119686Z level=info msg="Executing migration" id="create short_url table v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.41070681Z level=info msg="Migration successfully executed" id="create short_url table v1" duration=587.824µs 
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.413859137Z level=info msg="Executing migration" id="add index short_url.org_id-uid"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.41444946Z level=info msg="Migration successfully executed" id="add index short_url.org_id-uid" duration=590.523µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.41768089Z level=info msg="Executing migration" id="alter table short_url alter column created_by type to bigint"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.417746493Z level=info msg="Migration successfully executed" id="alter table short_url alter column created_by type to bigint" duration=67.003µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.420099588Z level=info msg="Executing migration" id="delete alert_definition table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.420209892Z level=info msg="Migration successfully executed" id="delete alert_definition table" duration=112.405µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.423541326Z level=info msg="Executing migration" id="recreate alert_definition table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.424043746Z level=info msg="Migration successfully executed" id="recreate alert_definition table" duration=503.22µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.427056467Z level=info msg="Executing migration" id="add index in alert_definition on org_id and title columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.427661091Z level=info msg="Migration successfully executed" id="add index in alert_definition on org_id and title columns" duration=604.924µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.430740915Z level=info msg="Executing migration" id="add index in alert_definition on org_id and uid columns" 
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.43135394Z level=info msg="Migration successfully executed" id="add index in alert_definition on org_id and uid columns" duration=614.125µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.43433186Z level=info msg="Executing migration" id="alter alert_definition table data column to mediumtext in mysql"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.434394162Z level=info msg="Migration successfully executed" id="alter alert_definition table data column to mediumtext in mysql" duration=63.903µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.437618392Z level=info msg="Executing migration" id="drop index in alert_definition on org_id and title columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.438257817Z level=info msg="Migration successfully executed" id="drop index in alert_definition on org_id and title columns" duration=640.525µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.441361642Z level=info msg="Executing migration" id="drop index in alert_definition on org_id and uid columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.442002868Z level=info msg="Migration successfully executed" id="drop index in alert_definition on org_id and uid columns" duration=642.126µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.44503729Z level=info msg="Executing migration" id="add unique index in alert_definition on org_id and title columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.445600012Z level=info msg="Migration successfully executed" id="add unique index in alert_definition on org_id and title columns" duration=563.122µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.447819402Z level=info msg="Executing migration" id="add unique index in alert_definition on org_id and uid columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.448383124Z level=info msg="Migration successfully executed" id="add unique index in alert_definition on org_id and uid columns" duration=564.622µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.45125464Z level=info msg="Executing migration" id="Add column paused in alert_definition"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.454333363Z level=info msg="Migration successfully executed" id="Add column paused in alert_definition" duration=3.078023ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.457333084Z level=info msg="Executing migration" id="drop alert_definition table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.457940908Z level=info msg="Migration successfully executed" id="drop alert_definition table" duration=605.724µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.461021332Z level=info msg="Executing migration" id="delete alert_definition_version table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.461112536Z level=info msg="Migration successfully executed" id="delete alert_definition_version table" duration=90.004µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.463576335Z level=info msg="Executing migration" id="recreate alert_definition_version table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.464106756Z level=info msg="Migration successfully executed" id="recreate alert_definition_version table" duration=532.021µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.46743279Z level=info msg="Executing migration" id="add index in alert_definition_version table on alert_definition_id and version columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.468043615Z level=info msg="Migration successfully executed" id="add index in alert_definition_version table on alert_definition_id and version columns" duration=611.124µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.470996133Z level=info msg="Executing migration" id="add index in alert_definition_version table on alert_definition_uid and version columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.471694261Z level=info msg="Migration successfully executed" id="add index in alert_definition_version table on alert_definition_uid and version columns" duration=698.328µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.474979793Z level=info msg="Executing migration" id="alter alert_definition_version table data column to mediumtext in mysql"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.475040696Z level=info msg="Migration successfully executed" id="alter alert_definition_version table data column to mediumtext in mysql" duration=62.403µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.478074618Z level=info msg="Executing migration" id="drop alert_definition_version table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.478684242Z level=info msg="Migration successfully executed" id="drop alert_definition_version table" duration=609.624µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.481569258Z level=info msg="Executing migration" id="create alert_instance table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.482085879Z level=info msg="Migration successfully executed" id="create alert_instance table" duration=516.321µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.486719465Z level=info msg="Executing migration" id="add index in alert_instance table on def_org_id, def_uid and current_state columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.487283588Z level=info msg="Migration successfully executed" id="add index in alert_instance table on def_org_id, def_uid and current_state columns" duration=564.423µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.490216406Z level=info msg="Executing migration" id="add index in alert_instance table on def_org_id, current_state columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.490773528Z level=info msg="Migration successfully executed" id="add index in alert_instance table on def_org_id, current_state columns" duration=558.022µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.493969457Z level=info msg="Executing migration" id="add column current_state_end to alert_instance"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.497202086Z level=info msg="Migration successfully executed" id="add column current_state_end to alert_instance" duration=3.23293ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.50052012Z level=info msg="Executing migration" id="remove index def_org_id, def_uid, current_state on alert_instance"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.501178846Z level=info msg="Migration successfully executed" id="remove index def_org_id, def_uid, current_state on alert_instance" duration=659.026µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.504271571Z level=info msg="Executing migration" id="remove index def_org_id, current_state on alert_instance"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.504851094Z level=info msg="Migration successfully executed" id="remove index def_org_id, current_state on alert_instance" duration=580.223µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.50775141Z level=info msg="Executing migration" id="rename def_org_id to rule_org_id in alert_instance"       
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.531498765Z level=info msg="Migration successfully executed" id="rename def_org_id to rule_org_id in alert_instance" duration=23.744555ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.536074449Z level=info msg="Executing migration" id="rename def_uid to rule_uid in alert_instance"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.558922767Z level=info msg="Migration successfully executed" id="rename def_uid to rule_uid in alert_instance" duration=22.846918ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.563172538Z level=info msg="Executing migration" id="add index rule_org_id, rule_uid, current_state on alert_instance"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.563876766Z level=info msg="Migration successfully executed" id="add index rule_org_id, rule_uid, current_state on alert_instance" duration=705.828µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.567658118Z level=info msg="Executing migration" id="add index rule_org_id, current_state on alert_instance"  
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.568223641Z level=info msg="Migration successfully executed" id="add index rule_org_id, current_state on alert_instance" duration=566.023µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.571667579Z level=info msg="Executing migration" id="add current_reason column related to current_state"      
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.574744903Z level=info msg="Migration successfully executed" id="add current_reason column related to current_state" duration=3.076724ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.578260144Z level=info msg="Executing migration" id="create alert_rule table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.578841568Z level=info msg="Migration successfully executed" id="create alert_rule table" duration=581.424µs  
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.583754065Z level=info msg="Executing migration" id="add index in alert_rule on org_id and title columns"     
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.584420192Z level=info msg="Migration successfully executed" id="add index in alert_rule on org_id and title columns" duration=666.627µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.587429313Z level=info msg="Executing migration" id="add index in alert_rule on org_id and uid columns"       
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.588160442Z level=info msg="Migration successfully executed" id="add index in alert_rule on org_id and uid columns" duration=731.029µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.591515577Z level=info msg="Executing migration" id="add index in alert_rule on org_id, namespace_uid, group_uid columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.592263807Z level=info msg="Migration successfully executed" id="add index in alert_rule on org_id, namespace_uid, group_uid columns" duration=749.13µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.595754848Z level=info msg="Executing migration" id="alter alert_rule table data column to mediumtext in mysql"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.595843051Z level=info msg="Migration successfully executed" id="alter alert_rule table data column to mediumtext in mysql" duration=90.604µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.599014079Z level=info msg="Executing migration" id="add column for to alert_rule"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.602334412Z level=info msg="Migration successfully executed" id="add column for to alert_rule" duration=3.321334ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.60576965Z level=info msg="Executing migration" id="add column annotations to alert_rule"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.609055082Z level=info msg="Migration successfully executed" id="add column annotations to alert_rule" duration=3.285032ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.612322413Z level=info msg="Executing migration" id="add column labels to alert_rule"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.615524042Z level=info msg="Migration successfully executed" id="add column labels to alert_rule" duration=3.205429ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.61844966Z level=info msg="Executing migration" id="remove unique index from alert_rule on org_id, title columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.619006382Z level=info msg="Migration successfully executed" id="remove unique index from alert_rule on org_id, title columns" duration=557.022µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.6219334Z level=info msg="Executing migration" id="add index in alert_rule on org_id, namespase_uid and title columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.622503823Z level=info msg="Migration successfully executed" id="add index in alert_rule on org_id, namespase_uid and title columns" duration=570.723µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.625576746Z level=info msg="Executing migration" id="add dashboard_uid column to alert_rule"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.628747174Z level=info msg="Migration successfully executed" id="add dashboard_uid column to alert_rule" duration=3.170427ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.631845998Z level=info msg="Executing migration" id="add panel_id column to alert_rule"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.634858719Z level=info msg="Migration successfully executed" id="add panel_id column to alert_rule" duration=3.012821ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.638378861Z level=info msg="Executing migration" id="add index in alert_rule on org_id, dashboard_uid and panel_id columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.638997386Z level=info msg="Migration successfully executed" id="add index in alert_rule on org_id, dashboard_uid and panel_id columns" duration=618.324µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.64233532Z level=info msg="Executing migration" id="add rule_group_idx column to alert_rule"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.645465346Z level=info msg="Migration successfully executed" id="add rule_group_idx column to alert_rule" duration=3.130725ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.64880588Z level=info msg="Executing migration" id="add is_paused column to alert_rule table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.65204081Z level=info msg="Migration successfully executed" id="add is_paused column to alert_rule table" duration=3.23453ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.655650255Z level=info msg="Executing migration" id="fix is_paused column for alert_rule table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.655736458Z level=info msg="Migration successfully executed" id="fix is_paused column for alert_rule table" duration=86.303µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.658815582Z level=info msg="Executing migration" id="create alert_rule_version table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.659442707Z level=info msg="Migration successfully executed" id="create alert_rule_version table" duration=627.225µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.662821943Z level=info msg="Executing migration" id="add index in alert_rule_version table on rule_org_id, rule_uid and version columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.663436968Z level=info msg="Migration successfully executed" id="add index in alert_rule_version table on rule_org_id, rule_uid and version columns" duration=615.325µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.66647329Z level=info msg="Executing migration" id="add index in alert_rule_version table on rule_org_id, rule_namespace_uid and rule_group columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.667132716Z level=info msg="Migration successfully executed" id="add index in alert_rule_version table on rule_org_id, rule_namespace_uid and rule_group columns" duration=659.426µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.670313744Z level=info msg="Executing migration" id="alter alert_rule_version table data column to mediumtext in mysql"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.670434249Z level=info msg="Migration successfully executed" id="alter alert_rule_version table data column to mediumtext in mysql" duration=119.105µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.674064495Z level=info msg="Executing migration" id="add column for to alert_rule_version"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.677808545Z level=info msg="Migration successfully executed" id="add column for to alert_rule_version" duration=3.74415ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.681100978Z level=info msg="Executing migration" id="add column annotations to alert_rule_version"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.685007335Z level=info msg="Migration successfully executed" id="add column annotations to alert_rule_version" duration=3.906357ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.688585879Z level=info msg="Executing migration" id="add column labels to alert_rule_version"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.692008516Z level=info msg="Migration successfully executed" id="add column labels to alert_rule_version" duration=3.423037ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.695635062Z level=info msg="Executing migration" id="add rule_group_idx column to alert_rule_version"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.698884693Z level=info msg="Migration successfully executed" id="add rule_group_idx column to alert_rule_version" duration=3.24783ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.702530639Z level=info msg="Executing migration" id="add is_paused column to alert_rule_versions table"       
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.706060981Z level=info msg="Migration successfully executed" id="add is_paused column to alert_rule_versions table" duration=3.530542ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.709708928Z level=info msg="Executing migration" id="fix is_paused column for alert_rule_version table"       
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.70977333Z level=info msg="Migration successfully executed" id="fix is_paused column for alert_rule_version table" duration=65.902µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.712895256Z level=info msg="Executing migration" id=create_alert_configuration_table
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.713390476Z level=info msg="Migration successfully executed" id=create_alert_configuration_table duration=495.72µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.7164801Z level=info msg="Executing migration" id="Add column default in alert_configuration"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.71973233Z level=info msg="Migration successfully executed" id="Add column default in alert_configuration" duration=3.25323ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.722814454Z level=info msg="Executing migration" id="alert alert_configuration alertmanager_configuration column from TEXT to MEDIUMTEXT if mysql"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.722878957Z level=info msg="Migration successfully executed" id="alert alert_configuration alertmanager_configuration column from TEXT to MEDIUMTEXT if mysql" duration=65.303µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.726113687Z level=info msg="Executing migration" id="add column org_id in alert_configuration"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.72941262Z level=info msg="Migration successfully executed" id="add column org_id in alert_configuration" duration=3.298732ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.732831957Z level=info msg="Executing migration" id="add index in alert_configuration table on org_id column" 
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.733532185Z level=info msg="Migration successfully executed" id="add index in alert_configuration table on org_id column" duration=700.128µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.73688492Z level=info msg="Executing migration" id="add configuration_hash column to alert_configuration"     
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.740515666Z level=info msg="Migration successfully executed" id="add configuration_hash column to alert_configuration" duration=3.631746ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.743785197Z level=info msg="Executing migration" id=create_ngalert_configuration_table
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.744300018Z level=info msg="Migration successfully executed" id=create_ngalert_configuration_table duration=483.62µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.74759545Z level=info msg="Executing migration" id="add index in ngalert_configuration on org_id column"      
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.748244176Z level=info msg="Migration successfully executed" id="add index in ngalert_configuration on org_id column" duration=649.226µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.751363502Z level=info msg="Executing migration" id="add column send_alerts_to in ngalert_configuration"      
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.754771239Z level=info msg="Migration successfully executed" id="add column send_alerts_to in ngalert_configuration" duration=3.407437ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.760894885Z level=info msg="Executing migration" id="create provenance_type table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.761381404Z level=info msg="Migration successfully executed" id="create provenance_type table" duration=487.719µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.764407026Z level=info msg="Executing migration" id="add index to uniquify (record_key, record_type, org_id) columns"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.76500705Z level=info msg="Migration successfully executed" id="add index to uniquify (record_key, record_type, org_id) columns" duration=600.124µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.768068573Z level=info msg="Executing migration" id="create alert_image table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.768548693Z level=info msg="Migration successfully executed" id="create alert_image table" duration=480.219µs 
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.771657117Z level=info msg="Executing migration" id="add unique index on token to alert_image table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.77222894Z level=info msg="Migration successfully executed" id="add unique index on token to alert_image table" duration=572.923µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.775284863Z level=info msg="Executing migration" id="support longer URLs in alert_image table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.775344766Z level=info msg="Migration successfully executed" id="support longer URLs in alert_image table" duration=60.703µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.778282084Z level=info msg="Executing migration" id=create_alert_configuration_history_table
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.778803805Z level=info msg="Migration successfully executed" id=create_alert_configuration_history_table duration=521.521µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.781961832Z level=info msg="Executing migration" id="drop non-unique orgID index on alert_configuration"      
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.782558956Z level=info msg="Migration successfully executed" id="drop non-unique orgID index on alert_configuration" duration=597.324µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.785592078Z level=info msg="Executing migration" id="drop unique orgID index on alert_configuration if exists"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.785852588Z level=warn msg="Skipping migration: Already executed, but not recorded in migration log" id="drop unique orgID index on alert_configuration if exists"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.789050717Z level=info msg="Executing migration" id="extract alertmanager configuration history to separate table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.789366429Z level=info msg="Migration successfully executed" id="extract alertmanager configuration history to separate table" duration=315.913µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.791890531Z level=info msg="Executing migration" id="add unique index on orgID to alert_configuration"        
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.792537457Z level=info msg="Migration successfully executed" id="add unique index on orgID to alert_configuration" duration=647.426µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.795565478Z level=info msg="Executing migration" id="add last_applied column to alert_configuration_history"  
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.799259827Z level=info msg="Migration successfully executed" id="add last_applied column to alert_configuration_history" duration=3.694049ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.802287749Z level=info msg="Executing migration" id="create library_element table v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.802777668Z level=info msg="Migration successfully executed" id="create library_element table v1" duration=490.42µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.806187805Z level=info msg="Executing migration" id="add index library_element org_id-folder_id-name-kind"    
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.806840932Z level=info msg="Migration successfully executed" id="add index library_element org_id-folder_id-name-kind" duration=652.927µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.81004056Z level=info msg="Executing migration" id="create library_element_connection table v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.810468677Z level=info msg="Migration successfully executed" id="create library_element_connection table v1" duration=427.817µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.816098204Z level=info msg="Executing migration" id="add index library_element_connection element_id-kind-connection_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.816777131Z level=info msg="Migration successfully executed" id="add index library_element_connection element_id-kind-connection_id" duration=679.127µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.820124065Z level=info msg="Executing migration" id="add unique index library_element org_id_uid"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.820757391Z level=info msg="Migration successfully executed" id="add unique index library_element org_id_uid" duration=633.626µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.823802513Z level=info msg="Executing migration" id="increase max description length to 2048"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.823840715Z level=info msg="Migration successfully executed" id="increase max description length to 2048" duration=39.702µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.826780133Z level=info msg="Executing migration" id="alter library_element model to mediumtext"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.826842335Z level=info msg="Migration successfully executed" id="alter library_element model to mediumtext" duration=65.502µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.82968585Z level=info msg="Executing migration" id="clone move dashboard alerts to unified alerting"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.829965161Z level=info msg="Migration successfully executed" id="clone move dashboard alerts to unified alerting" duration=279.811µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.833100887Z level=info msg="Executing migration" id="create data_keys table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.833645609Z level=info msg="Migration successfully executed" id="create data_keys table" duration=544.822µs   
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.836727033Z level=info msg="Executing migration" id="create secrets table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.83716575Z level=info msg="Migration successfully executed" id="create secrets table" duration=439.117µs      
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.840041466Z level=info msg="Executing migration" id="rename data_keys name column to id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.875318784Z level=info msg="Migration successfully executed" id="rename data_keys name column to id" duration=35.273618ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.880084675Z level=info msg="Executing migration" id="add name column into data_keys"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.884273244Z level=info msg="Migration successfully executed" id="add name column into data_keys" duration=4.189269ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.888208502Z level=info msg="Executing migration" id="copy data_keys id column values into name"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.888321606Z level=info msg="Migration successfully executed" id="copy data_keys id column values into name" duration=114.104µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.892032956Z level=info msg="Executing migration" id="rename data_keys name column to label"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.926040523Z level=info msg="Migration successfully executed" id="rename data_keys name column to label" duration=34.004166ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.930244791Z level=info msg="Executing migration" id="rename data_keys id column back to name"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.966750959Z level=info msg="Migration successfully executed" id="rename data_keys id column back to name" duration=36.502467ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.971586953Z level=info msg="Executing migration" id="create kv_store table v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.972169477Z level=info msg="Migration successfully executed" id="create kv_store table v1" duration=584.423µs 
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.975766121Z level=info msg="Executing migration" id="add index kv_store.org_id-namespace-key"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.976383146Z level=info msg="Migration successfully executed" id="add index kv_store.org_id-namespace-key" duration=616.125µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.979998991Z level=info msg="Executing migration" id="update dashboard_uid and panel_id from existing annotations"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.980137297Z level=info msg="Migration successfully executed" id="update dashboard_uid and panel_id from existing annotations" duration=139.106µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.983264522Z level=info msg="Executing migration" id="create permission table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.983802944Z level=info msg="Migration successfully executed" id="create permission table" duration=538.522µs  
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.987118177Z level=info msg="Executing migration" id="add unique index permission.role_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.987793505Z level=info msg="Migration successfully executed" id="add unique index permission.role_id" duration=676.427µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.991346347Z level=info msg="Executing migration" id="add unique index role_id_action_scope"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.991998374Z level=info msg="Migration successfully executed" id="add unique index role_id_action_scope" duration=652.226µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.995188002Z level=info msg="Executing migration" id="create role table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.995687922Z level=info msg="Migration successfully executed" id="create role table" duration=500.02µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:49.999110359Z level=info msg="Executing migration" id="add column display_name"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.003240225Z level=info msg="Migration successfully executed" id="add column display_name" duration=4.129866ms 
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.006521457Z level=info msg="Executing migration" id="add column group_name"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.010729826Z level=info msg="Migration successfully executed" id="add column group_name" duration=4.208069ms   
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.014335771Z level=info msg="Executing migration" id="add index role.org_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.014993298Z level=info msg="Migration successfully executed" id="add index role.org_id" duration=658.527µs    
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.01828763Z level=info msg="Executing migration" id="add unique index role_org_id_name"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.018942956Z level=info msg="Migration successfully executed" id="add unique index role_org_id_name" duration=655.426µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.022045481Z level=info msg="Executing migration" id="add index role_org_id_uid"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.022707108Z level=info msg="Migration successfully executed" id="add index role_org_id_uid" duration=661.827µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.025926537Z level=info msg="Executing migration" id="create team role table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.026435558Z level=info msg="Migration successfully executed" id="create team role table" duration=509.221µs   
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.029842595Z level=info msg="Executing migration" id="add index team_role.org_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.030519222Z level=info msg="Migration successfully executed" id="add index team_role.org_id" duration=676.428µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.033856756Z level=info msg="Executing migration" id="add unique index team_role_org_id_team_id_role_id"       
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.034545784Z level=info msg="Migration successfully executed" id="add unique index team_role_org_id_team_id_role_id" duration=688.928µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.037765513Z level=info msg="Executing migration" id="add index team_role.team_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.038391338Z level=info msg="Migration successfully executed" id="add index team_role.team_id" duration=625.925µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.041881178Z level=info msg="Executing migration" id="create user role table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.042384199Z level=info msg="Migration successfully executed" id="create user role table" duration=503.421µs   
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.045503824Z level=info msg="Executing migration" id="add index user_role.org_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.046213353Z level=info msg="Migration successfully executed" id="add index user_role.org_id" duration=710.028µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.049684092Z level=info msg="Executing migration" id="add unique index user_role_org_id_user_id_role_id"       
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.050429922Z level=info msg="Migration successfully executed" id="add unique index user_role_org_id_user_id_role_id" duration=746.33µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.053561948Z level=info msg="Executing migration" id="add index user_role.user_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.054191673Z level=info msg="Migration successfully executed" id="add index user_role.user_id" duration=629.325µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.057179093Z level=info msg="Executing migration" id="create builtin role table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.057688814Z level=info msg="Migration successfully executed" id="create builtin role table" duration=509.621µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.060714235Z level=info msg="Executing migration" id="add index builtin_role.role_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.061412963Z level=info msg="Migration successfully executed" id="add index builtin_role.role_id" duration=699.028µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.064597991Z level=info msg="Executing migration" id="add index builtin_role.name"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.065226217Z level=info msg="Migration successfully executed" id="add index builtin_role.name" duration=628.426µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.068337742Z level=info msg="Executing migration" id="Add column org_id to builtin_role table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.072464308Z level=info msg="Migration successfully executed" id="Add column org_id to builtin_role table" duration=4.126466ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.077201198Z level=info msg="Executing migration" id="add index builtin_role.org_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.077820423Z level=info msg="Migration successfully executed" id="add index builtin_role.org_id" duration=620.325µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.080997651Z level=info msg="Executing migration" id="add unique index builtin_role_org_id_role_id_role"       
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.081608675Z level=info msg="Migration successfully executed" id="add unique index builtin_role_org_id_role_id_role" duration=611.324µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.084802604Z level=info msg="Executing migration" id="Remove unique index role_org_id_uid"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.085431829Z level=info msg="Migration successfully executed" id="Remove unique index role_org_id_uid" duration=630.826µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.088401548Z level=info msg="Executing migration" id="add unique index role.uid"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.088993472Z level=info msg="Migration successfully executed" id="add unique index role.uid" duration=592.524µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.092011193Z level=info msg="Executing migration" id="create seed assignment table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.092496413Z level=info msg="Migration successfully executed" id="create seed assignment table" duration=486.42µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.095548335Z level=info msg="Executing migration" id="add unique index builtin_role_role_name"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.09616616Z level=info msg="Migration successfully executed" id="add unique index builtin_role_role_name" duration=615.625µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.099219983Z level=info msg="Executing migration" id="add column hidden to role table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.103706163Z level=info msg="Migration successfully executed" id="add column hidden to role table" duration=4.48578ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.106795487Z level=info msg="Executing migration" id="permission kind migration"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.11107886Z level=info msg="Migration successfully executed" id="permission kind migration" duration=4.289372ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.114704905Z level=info msg="Executing migration" id="permission attribute migration"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.119009478Z level=info msg="Migration successfully executed" id="permission attribute migration" duration=4.306773ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.122562121Z level=info msg="Executing migration" id="permission identifier migration"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.126986699Z level=info msg="Migration successfully executed" id="permission identifier migration" duration=4.413877ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.133300453Z level=info msg="Executing migration" id="add permission identifier index"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.134055783Z level=info msg="Migration successfully executed" id="add permission identifier index" duration=757.83µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.137515922Z level=info msg="Executing migration" id="create query_history table v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.138093645Z level=info msg="Migration successfully executed" id="create query_history table v1" duration=578.023µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.14167889Z level=info msg="Executing migration" id="add index query_history.org_id-created_by-datasource_uid" 
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.142406319Z level=info msg="Migration successfully executed" id="add index query_history.org_id-created_by-datasource_uid" duration=726.83µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.145727852Z level=info msg="Executing migration" id="alter table query_history alter column created_by type to bigint"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.145789155Z level=info msg="Migration successfully executed" id="alter table query_history alter column created_by type to bigint" duration=62.503µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.14816585Z level=info msg="Executing migration" id="rbac disabled migrator"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.148205752Z level=info msg="Migration successfully executed" id="rbac disabled migrator" duration=41.202µs    
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.151242874Z level=info msg="Executing migration" id="teams permissions migration"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.151609389Z level=info msg="Migration successfully executed" id="teams permissions migration" duration=368.015µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.154584408Z level=info msg="Executing migration" id="dashboard permissions"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.154985224Z level=info msg="Migration successfully executed" id="dashboard permissions" duration=402.216µs    
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.157943343Z level=info msg="Executing migration" id="dashboard permissions uid scopes"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.15835636Z level=info msg="Migration successfully executed" id="dashboard permissions uid scopes" duration=413.517µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.161366281Z level=info msg="Executing migration" id="drop managed folder create actions"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.161494286Z level=info msg="Migration successfully executed" id="drop managed folder create actions" duration=128.605µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.163712975Z level=info msg="Executing migration" id="alerting notification permissions"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.164020488Z level=info msg="Migration successfully executed" id="alerting notification permissions" duration=308.112µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.166850901Z level=info msg="Executing migration" id="create query_history_star table v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.16731262Z level=info msg="Migration successfully executed" id="create query_history_star table v1" duration=461.819µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.170216437Z level=info msg="Executing migration" id="add index query_history.user_id-query_uid"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.170850262Z level=info msg="Migration successfully executed" id="add index query_history.user_id-query_uid" duration=632.026µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.173938286Z level=info msg="Executing migration" id="add column org_id in query_history_star"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.178064152Z level=info msg="Migration successfully executed" id="add column org_id in query_history_star" duration=4.125866ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.181151576Z level=info msg="Executing migration" id="alter table query_history_star_mig column user_id type to bigint"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.181216479Z level=info msg="Migration successfully executed" id="alter table query_history_star_mig column user_id type to bigint" duration=66.303µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.183433968Z level=info msg="Executing migration" id="create correlation table v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.184015891Z level=info msg="Migration successfully executed" id="create correlation table v1" duration=584.123µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.187114516Z level=info msg="Executing migration" id="add index correlations.uid"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.188200659Z level=info msg="Migration successfully executed" id="add index correlations.uid" duration=1.086043ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.191571295Z level=info msg="Executing migration" id="add index correlations.source_uid"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.192233721Z level=info msg="Migration successfully executed" id="add index correlations.source_uid" duration=663.226µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.195278344Z level=info msg="Executing migration" id="add correlation config column"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.199601518Z level=info msg="Migration successfully executed" id="add correlation config column" duration=4.323073ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.20288875Z level=info msg="Executing migration" id="drop index IDX_correlation_uid - v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.203593878Z level=info msg="Migration successfully executed" id="drop index IDX_correlation_uid - v1" duration=705.928µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.206702003Z level=info msg="Executing migration" id="drop index IDX_correlation_source_uid - v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.207328628Z level=info msg="Migration successfully executed" id="drop index IDX_correlation_source_uid - v1" duration=626.825µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.210502056Z level=info msg="Executing migration" id="Rename table correlation to correlation_tmp_qwerty - v1" 
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.231718308Z level=info msg="Migration successfully executed" id="Rename table correlation to correlation_tmp_qwerty - v1" duration=21.214452ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.236179988Z level=info msg="Executing migration" id="create correlation v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.236777912Z level=info msg="Migration successfully executed" id="create correlation v2" duration=598.724µs    
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.240452259Z level=info msg="Executing migration" id="create index IDX_correlation_uid - v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.241175989Z level=info msg="Migration successfully executed" id="create index IDX_correlation_uid - v2" duration=724.329µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.244929739Z level=info msg="Executing migration" id="create index IDX_correlation_source_uid - v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.24568147Z level=info msg="Migration successfully executed" id="create index IDX_correlation_source_uid - v2" duration=752.831µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.249073206Z level=info msg="Executing migration" id="create index IDX_correlation_org_id - v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.249703531Z level=info msg="Migration successfully executed" id="create index IDX_correlation_org_id - v2" duration=629.625µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.252935161Z level=info msg="Executing migration" id="copy correlation v1 to v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.253135169Z level=info msg="Migration successfully executed" id="copy correlation v1 to v2" duration=202.208µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.256539206Z level=info msg="Executing migration" id="drop correlation_tmp_qwerty"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.257091628Z level=info msg="Migration successfully executed" id="drop correlation_tmp_qwerty" duration=553.022µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.260150051Z level=info msg="Executing migration" id="add provisioning column"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.264616631Z level=info msg="Migration successfully executed" id="add provisioning column" duration=4.46548ms  
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.268397383Z level=info msg="Executing migration" id="create entity_events table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.268918204Z level=info msg="Migration successfully executed" id="create entity_events table" duration=521.221µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.272717056Z level=info msg="Executing migration" id="create dashboard public config v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.273336581Z level=info msg="Migration successfully executed" id="create dashboard public config v1" duration=620.025µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.276841022Z level=info msg="Executing migration" id="drop index UQE_dashboard_public_config_uid - v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.277141134Z level=warn msg="Skipping migration: Already executed, but not recorded in migration log" id="drop index UQE_dashboard_public_config_uid - v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.280216058Z level=info msg="Executing migration" id="drop index IDX_dashboard_public_config_org_id_dashboard_uid - v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.280538371Z level=warn msg="Skipping migration: Already executed, but not recorded in migration log" id="drop index IDX_dashboard_public_config_org_id_dashboard_uid - v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.283666796Z level=info msg="Executing migration" id="Drop old dashboard public config table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.284279821Z level=info msg="Migration successfully executed" id="Drop old dashboard public config table" duration=613.025µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.287410147Z level=info msg="Executing migration" id="recreate dashboard public config v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.288039572Z level=info msg="Migration successfully executed" id="recreate dashboard public config v1" duration=629.425µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.291256001Z level=info msg="Executing migration" id="create index UQE_dashboard_public_config_uid - v1"       
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.291917328Z level=info msg="Migration successfully executed" id="create index UQE_dashboard_public_config_uid - v1" duration=662.027µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.295003052Z level=info msg="Executing migration" id="create index IDX_dashboard_public_config_org_id_dashboard_uid - v1"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.296426509Z level=info msg="Migration successfully executed" id="create index IDX_dashboard_public_config_org_id_dashboard_uid - v1" duration=1.423357ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.299410729Z level=info msg="Executing migration" id="drop index UQE_dashboard_public_config_uid - v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.300045055Z level=info msg="Migration successfully executed" id="drop index UQE_dashboard_public_config_uid - v2" duration=634.426µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.303021974Z level=info msg="Executing migration" id="drop index IDX_dashboard_public_config_org_id_dashboard_uid - v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.303759404Z level=info msg="Migration successfully executed" id="drop index IDX_dashboard_public_config_org_id_dashboard_uid - v2" duration=739.43µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.306777725Z level=info msg="Executing migration" id="Drop public config table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.307360849Z level=info msg="Migration successfully executed" id="Drop public config table" duration=583.224µs 
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.310405771Z level=info msg="Executing migration" id="Recreate dashboard public config v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.311078698Z level=info msg="Migration successfully executed" id="Recreate dashboard public config v2" duration=673.127µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.314132421Z level=info msg="Executing migration" id="create index UQE_dashboard_public_config_uid - v2"       
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.314787147Z level=info msg="Migration successfully executed" id="create index UQE_dashboard_public_config_uid - v2" duration=653.326µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.317806669Z level=info msg="Executing migration" id="create index IDX_dashboard_public_config_org_id_dashboard_uid - v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.318414393Z level=info msg="Migration successfully executed" id="create index IDX_dashboard_public_config_org_id_dashboard_uid - v2" duration=608.225µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.32157182Z level=info msg="Executing migration" id="create index UQE_dashboard_public_config_access_token - v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.322176944Z level=info msg="Migration successfully executed" id="create index UQE_dashboard_public_config_access_token - v2" duration=605.724µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.325285369Z level=info msg="Executing migration" id="Rename table dashboard_public_config to dashboard_public - v2"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.349092626Z level=info msg="Migration successfully executed" id="Rename table dashboard_public_config to dashboard_public - v2" duration=23.803957ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.353507903Z level=info msg="Executing migration" id="add annotations_enabled column"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.357955782Z level=info msg="Migration successfully executed" id="add annotations_enabled column" duration=4.448879ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.361615929Z level=info msg="Executing migration" id="add time_selection_enabled column"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.366084809Z level=info msg="Migration successfully executed" id="add time_selection_enabled column" duration=4.46868ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.370136672Z level=info msg="Executing migration" id="delete orphaned public dashboards"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.370301678Z level=info msg="Migration successfully executed" id="delete orphaned public dashboards" duration=166.106µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.373556809Z level=info msg="Executing migration" id="add share column"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.378141694Z level=info msg="Migration successfully executed" id="add share column" duration=4.582684ms        
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.381703737Z level=info msg="Executing migration" id="backfill empty share column fields with default of public"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.381882144Z level=info msg="Migration successfully executed" id="backfill empty share column fields with default of public" duration=176.507µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.385236079Z level=info msg="Executing migration" id="create file table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.385752499Z level=info msg="Migration successfully executed" id="create file table" duration=517.92µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.388801422Z level=info msg="Executing migration" id="file table idx: path natural pk"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.389464849Z level=info msg="Migration successfully executed" id="file table idx: path natural pk" duration=663.827µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.392575774Z level=info msg="Executing migration" id="file table idx: parent_folder_path_hash fast folder retrieval"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.3932338Z level=info msg="Migration successfully executed" id="file table idx: parent_folder_path_hash fast folder retrieval" duration=658.526µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.39621472Z level=info msg="Executing migration" id="create file_meta table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.396654938Z level=info msg="Migration successfully executed" id="create file_meta table" duration=440.318µs   
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.399593456Z level=info msg="Executing migration" id="file table idx: path key"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.400274083Z level=info msg="Migration successfully executed" id="file table idx: path key" duration=680.627µs 
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.40344031Z level=info msg="Executing migration" id="set path collation in file table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.403521614Z level=info msg="Migration successfully executed" id="set path collation in file table" duration=82.504µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.40890153Z level=info msg="Executing migration" id="migrate contents column to mediumblob for MySQL"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.408963032Z level=info msg="Migration successfully executed" id="migrate contents column to mediumblob for MySQL" duration=62.502µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.412025755Z level=info msg="Executing migration" id="managed permissions migration"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.412365269Z level=info msg="Migration successfully executed" id="managed permissions migration" duration=340.014µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.415393091Z level=info msg="Executing migration" id="managed folder permissions alert actions migration"      
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.415569298Z level=info msg="Migration successfully executed" id="managed folder permissions alert actions migration" duration=176.907µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.418948634Z level=info msg="Executing migration" id="RBAC action name migrator"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.419419853Z level=info msg="Migration successfully executed" id="RBAC action name migrator" duration=473.619µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.42259728Z level=info msg="Executing migration" id="Add UID column to playlist"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.427651083Z level=info msg="Migration successfully executed" id="Add UID column to playlist" duration=5.054203ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.430643104Z level=info msg="Executing migration" id="Update uid column values in playlist"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.430763509Z level=info msg="Migration successfully executed" id="Update uid column values in playlist" duration=121.804µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.433896534Z level=info msg="Executing migration" id="Add index for uid in playlist"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.434624264Z level=info msg="Migration successfully executed" id="Add index for uid in playlist" duration=727.93µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.437921296Z level=info msg="Executing migration" id="update group index for alert rules"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.438203208Z level=info msg="Migration successfully executed" id="update group index for alert rules" duration=282.311µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.441276931Z level=info msg="Executing migration" id="managed folder permissions alert actions repeated migration"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.441442838Z level=info msg="Migration successfully executed" id="managed folder permissions alert actions repeated migration" duration=166.707µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.443841634Z level=info msg="Executing migration" id="admin only folder/dashboard permission"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.444159147Z level=info msg="Migration successfully executed" id="admin only folder/dashboard permission" duration=318.013µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.449525863Z level=info msg="Executing migration" id="add action column to seed_assignment"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.454140748Z level=info msg="Migration successfully executed" id="add action column to seed_assignment" duration=4.615686ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.457568886Z level=info msg="Executing migration" id="add scope column to seed_assignment"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.462031265Z level=info msg="Migration successfully executed" id="add scope column to seed_assignment" duration=4.461879ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.465498605Z level=info msg="Executing migration" id="remove unique index builtin_role_role_name before nullable update"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.466163331Z level=info msg="Migration successfully executed" id="remove unique index builtin_role_role_name before nullable update" duration=665.326µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.469516166Z level=info msg="Executing migration" id="update seed_assignment role_name column to nullable"     
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.551496361Z level=info msg="Migration successfully executed" id="update seed_assignment role_name column to nullable" duration=81.973794ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.556300154Z level=info msg="Executing migration" id="add unique index builtin_role_name back"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.557011983Z level=info msg="Migration successfully executed" id="add unique index builtin_role_name back" duration=713.129µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.56068503Z level=info msg="Executing migration" id="add unique index builtin_role_action_scope"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.561395959Z level=info msg="Migration successfully executed" id="add unique index builtin_role_action_scope" duration=711.229µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.56491Z level=info msg="Executing migration" id="add primary key to seed_assigment"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.589567791Z level=info msg="Migration successfully executed" id="add primary key to seed_assigment" duration=24.655791ms
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.594389285Z level=info msg="Executing migration" id="managed folder permissions alert actions repeated fixed migration"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.594587693Z level=info msg="Migration successfully executed" id="managed folder permissions alert actions repeated fixed migration" duration=199.808µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.598118835Z level=info msg="Executing migration" id="managed folder permissions library panel actions migration"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.598299742Z level=info msg="Migration successfully executed" id="managed folder permissions library panel actions migration" duration=182.107µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.602335404Z level=info msg="Executing migration" id="migrate external alertmanagers to datsourcse"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.602546313Z level=info msg="Migration successfully executed" id="migrate external alertmanagers to datsourcse" duration=210.909µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.605591235Z level=info msg="Executing migration" id="create folder table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.60620306Z level=info msg="Migration successfully executed" id="create folder table" duration=612.025µs       
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.60919368Z level=info msg="Executing migration" id="Add index for parent_uid"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.609884108Z level=info msg="Migration successfully executed" id="Add index for parent_uid" duration=690.728µs 
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.612847127Z level=info msg="Executing migration" id="Add unique index for folder.uid and folder.org_id"       
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.613576956Z level=info msg="Migration successfully executed" id="Add unique index for folder.uid and folder.org_id" duration=727.229µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.616678581Z level=info msg="Executing migration" id="Update folder title length"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.616715182Z level=info msg="Migration successfully executed" id="Update folder title length" duration=37.901µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.6196391Z level=info msg="Executing migration" id="Add unique index for folder.title and folder.parent_uid"   
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.620439132Z level=info msg="Migration successfully executed" id="Add unique index for folder.title and folder.parent_uid" duration=797.732µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.623322848Z level=info msg="Executing migration" id="Remove unique index for folder.title and folder.parent_uid"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.624033277Z level=info msg="Migration successfully executed" id="Remove unique index for folder.title and folder.parent_uid" duration=711.228µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.627196504Z level=info msg="Executing migration" id="Add unique index for title, parent_uid, and org_id"      
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.627963534Z level=info msg="Migration successfully executed" id="Add unique index for title, parent_uid, and org_id" duration=767.03µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.631001657Z level=info msg="Executing migration" id="create anon_device table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.63157248Z level=info msg="Migration successfully executed" id="create anon_device table" duration=571.322µs  
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.634671204Z level=info msg="Executing migration" id="add unique index anon_device.device_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.635378733Z level=info msg="Migration successfully executed" id="add unique index anon_device.device_id" duration=708.028µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.638343752Z level=info msg="Executing migration" id="add index anon_device.updated_at"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.638971677Z level=info msg="Migration successfully executed" id="add index anon_device.updated_at" duration=628.525µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.641898895Z level=info msg="Executing migration" id="create signing_key table"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.642386914Z level=info msg="Migration successfully executed" id="create signing_key table" duration=487.52µs  
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.645351933Z level=info msg="Executing migration" id="add unique index signing_key.key_id"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.645985659Z level=info msg="Migration successfully executed" id="add unique index signing_key.key_id" duration=634.526µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.650804053Z level=info msg="Executing migration" id="set legacy alert migration status in kvstore"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.651524181Z level=info msg="Migration successfully executed" id="set legacy alert migration status in kvstore" duration=721.029µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.654402497Z level=info msg="Executing migration" id="migrate record of created folders during legacy migration to kvstore"
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.654621806Z level=info msg="Migration successfully executed" id="migrate record of created folders during legacy migration to kvstore" duration=217.109µs
+object-detection-grafana  | logger=migrator t=2025-06-27T23:22:50.657648028Z level=info msg="migrations completed" performed=517 skipped=0 duration=4.229545719s
+object-detection-grafana  | logger=sqlstore t=2025-06-27T23:22:50.668338557Z level=info msg="Created default admin" user=admin
+object-detection-grafana  | logger=sqlstore t=2025-06-27T23:22:50.668579467Z level=info msg="Created default organization"
+object-detection-grafana  | logger=secrets t=2025-06-27T23:22:50.67238112Z level=info msg="Envelope encryption state" enabled=true currentprovider=secretKey.v1
+object-detection-grafana  | logger=local.finder t=2025-06-27T23:22:50.745336352Z level=warn msg="Skipping finding plugins as directory does not exist" path=/usr/share/grafana/plugins-bundled
+object-detection-grafana  | logger=plugins.registration t=2025-06-27T23:22:50.828923712Z level=info msg="Plugin registered" pluginId=grafana-clock-panel
+object-detection-grafana  | logger=plugins.registration t=2025-06-27T23:22:50.828983614Z level=info msg="Plugin registered" pluginId=grafana-simple-json-datasource
+object-detection-grafana  | logger=query_data t=2025-06-27T23:22:50.835888892Z level=info msg="Query Service initialization"
+object-detection-grafana  | logger=live.push_http t=2025-06-27T23:22:50.838610601Z level=info msg="Live Push Gateway initialization"
+object-detection-grafana  | logger=infra.usagestats.collector t=2025-06-27T23:22:52.468096694Z level=info msg="registering usage stat providers" usageStatsProvidersLen=2      
+object-detection-grafana  | logger=provisioning.datasources t=2025-06-27T23:22:52.479092036Z level=info msg="inserting datasource from configuration " name=InfluxDB-ObjectDetection uid=PE8705DC0D6920909
+object-detection-grafana  | logger=provisioning.plugins t=2025-06-27T23:22:52.505370392Z level=error msg="Failed to read plugin provisioning files from directory" path=/etc/grafana/provisioning/plugins error="open /etc/grafana/provisioning/plugins: no such file or directory"
+object-detection-grafana  | logger=provisioning.notifiers t=2025-06-27T23:22:52.505703405Z level=error msg="Can't read alert notification provisioning files from directory" path=/etc/grafana/provisioning/notifiers error="open /etc/grafana/provisioning/notifiers: no such file or directory"
+object-detection-grafana  | logger=provisioning.alerting t=2025-06-27T23:22:52.50606902Z level=error msg="can't read alerting provisioning files from directory" path=/etc/grafana/provisioning/alerting error="open /etc/grafana/provisioning/alerting: no such file or directory"
+object-detection-grafana  | logger=provisioning.alerting t=2025-06-27T23:22:52.506100221Z level=info msg="starting to provision alerting"
+object-detection-grafana  | logger=provisioning.alerting t=2025-06-27T23:22:52.506109522Z level=info msg="finished to provision alerting"
+object-detection-grafana  | logger=grafanaStorageLogger t=2025-06-27T23:22:52.506270128Z level=info msg="Storage starting"
+object-detection-grafana  | logger=ngalert.state.manager t=2025-06-27T23:22:52.507278469Z level=info msg="Warming state cache for startup"
+object-detection-grafana  | logger=http.server t=2025-06-27T23:22:52.509583561Z level=info msg="HTTP Server Listen" address=[::]:3000 protocol=http subUrl= socket=
+object-detection-grafana  | logger=ngalert.state.manager t=2025-06-27T23:22:52.535856517Z level=info msg="State cache has been initialized" states=0 duration=28.575548ms      
+object-detection-grafana  | logger=ngalert.scheduler t=2025-06-27T23:22:52.53591362Z level=info msg="Starting scheduler" tickInterval=10s
+object-detection-grafana  | logger=ticker t=2025-06-27T23:22:52.535969922Z level=info msg=starting first_tick=2025-06-27T23:23:00Z
+object-detection-grafana  | logger=ngalert.multiorg.alertmanager t=2025-06-27T23:22:52.535951821Z level=info msg="Starting MultiOrg Alertmanager"
+object-detection-grafana  | logger=ngalert.migration t=2025-06-27T23:22:52.539391959Z level=info msg=Starting
+object-detection-grafana  | logger=ngalert.migration t=2025-06-27T23:22:52.539882079Z level=info msg="Starting legacy migration"
+object-detection-grafana  | logger=ngalert.migration orgID=1 t=2025-06-27T23:22:52.540087387Z level=info msg="Migrating alerts for organisation"
+object-detection-grafana  | logger=ngalert.migration orgID=1 t=2025-06-27T23:22:52.540383299Z level=info msg="Alerts found to migrate" alerts=0
+object-detection-grafana  | logger=ngalert.migration orgID=1 t=2025-06-27T23:22:52.54065011Z level=warn msg="No available receivers"
+object-detection-grafana  | logger=ngalert.migration t=2025-06-27T23:22:52.54389444Z level=info msg="Completed legacy migration"
+object-detection-grafana  | logger=grafana.update.checker t=2025-06-27T23:22:52.563571631Z level=info msg="Update check succeeded" duration=56.702579ms
+object-detection-grafana  | logger=plugins.update.checker t=2025-06-27T23:22:52.591722063Z level=info msg="Update check succeeded" duration=84.448995ms
+object-detection-grafana  | logger=dashboard-service t=2025-06-27T23:22:52.601972775Z level=error msg="Could not make user admin" dashboard="Object Detection" namespaceID=user userID=0 error="identifier is not initialized"
+object-detection-grafana  | logger=dashboard-service t=2025-06-27T23:22:52.615240508Z level=error msg="Could not make user admin" dashboard="Object Detection Dashboard" namespaceID=user userID=0 error="identifier is not initialized"
+PS C:\Users\rafae\OneDrive\Ambiente de Trabalho\object_detection_influx_grafana_windows_v3\home\ubuntu\upload> 

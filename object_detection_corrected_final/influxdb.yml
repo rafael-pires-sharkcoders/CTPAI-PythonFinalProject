@@ -1,0 +1,20 @@
+apiVersion: 1
+
+datasources:
+  - name: InfluxDB-ObjectDetection
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    database: object-detection
+    user: admin
+    password: adminpassword
+    isDefault: true
+    jsonData:
+      version: Flux
+      organization: object-detection-org
+      defaultBucket: object-detection
+      tlsSkipVerify: true
+    secureJsonData:
+      token: rgR64HQYPQ6Bd6Jq0aem9ZVX_VDJj1iLOsJJwS-3bt-BSnd4EntBb6fnYWVMeZHZKt_JXwoHhRDO96ps7Spi1w==
+    editable: true
+

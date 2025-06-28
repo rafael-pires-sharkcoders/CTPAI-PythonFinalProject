@@ -1,0 +1,25 @@
+# Core dependencies
+opencv-python>=4.8.0
+ultralytics>=8.0.0
+numpy>=1.21.0
+pillow>=9.0.0
+
+# Configuration management
+pydantic>=2.0.0
+pyyaml>=6.0.0
+
+# CLI and logging
+typer>=0.9.0
+rich>=13.0.0
+
+# Performance monitoring
+psutil>=5.9.0
+
+# Development tools (optional)
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
+pytest>=7.0.0 
+# InfluxDB integration
+influxdb-client>=1.36.0
+

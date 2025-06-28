@@ -1,0 +1,47 @@
+services:
+  influxdb:
+    image: influxdb:2.7
+    container_name: object-detection-influxdb
+    ports:
+      - "8086:8086"
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=admin
+      - DOCKER_INFLUXDB_INIT_PASSWORD=adminpassword
+      - DOCKER_INFLUXDB_INIT_ORG=object-detection-org
+      - DOCKER_INFLUXDB_INIT_BUCKET=object-detection
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=rgR64HQYPQ6Bd6Jq0aem9ZVX_VDJj1iLOsJJwS-3bt-BSnd4EntBb6fnYWVMeZHZKt_JXwoHhRDO96ps7Spi1w==
+    volumes:
+      - influxdb-data:/var/lib/influxdb2
+      - influxdb-config:/etc/influxdb2
+    restart: unless-stopped
+    networks:
+      - monitoring
+
+  grafana:
+    image: grafana/grafana:10.2.0
+    container_name: object-detection-grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=adminpassword
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning
+    depends_on:
+      - influxdb
+    restart: unless-stopped
+    networks:
+      - monitoring
+
+volumes:
+  influxdb-data:
+  influxdb-config:
+  grafana-data:
+
+networks:
+  monitoring:
+    driver: bridge
+
